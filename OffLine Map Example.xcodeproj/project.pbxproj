@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C23D8AAD1AB324F4002C8913 /* kiev_OSMBright.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = C23D8AAC1AB324C6002C8913 /* kiev_OSMBright.mbtiles */; };
+		DD3A27EE1582A0AB00DADEFF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */; };
+		DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDC4BF10152E455500089409 /* libz.dylib */; };
+		DDA6DFBF16A6364F00D373D8 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA6DFBD16A6364F00D373D8 /* NSData+Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DDA8783919AE9899006AFD7A /* Mapbox.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DDA8783819AE9899006AFD7A /* Mapbox.bundle */; };
+		DDA8783B19AE98A6006AFD7A /* libMapbox.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDA8783A19AE98A6006AFD7A /* libMapbox.a */; };
+		DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */; };
+		DDC4BEC9152E36FF00089409 /* offline.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC7152E36FF00089409 /* offline.png */; };
+		DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DDC4BEC8152E36FF00089409 /* offline@2x.png */; };
+		DDC4BF12152E457A00089409 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */; };
+		DDC930061A1599D20082BDE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC930041A1599D20082BDE8 /* Images.xcassets */; };
+		DDC930071A1599D20082BDE8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDC930051A1599D20082BDE8 /* LaunchScreen.xib */; };
+		DDEF3A2E1522813600DE6DB0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A2D1522813600DE6DB0 /* UIKit.framework */; };
+		DDEF3A301522813600DE6DB0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A2F1522813600DE6DB0 /* Foundation.framework */; };
+		DDEF3A321522813600DE6DB0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A311522813600DE6DB0 /* CoreGraphics.framework */; };
+		DDEF3A381522813600DE6DB0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DDEF3A361522813600DE6DB0 /* InfoPlist.strings */; };
+		DDEF3A3A1522813600DE6DB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A391522813600DE6DB0 /* main.m */; };
+		DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */; };
+		DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C23D8AAC1AB324C6002C8913 /* kiev_OSMBright.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = kiev_OSMBright.mbtiles; sourceTree = "<group>"; };
+		DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DDA6DFBD16A6364F00D373D8 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		DDA6DFBE16A6364F00D373D8 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		DDA8783819AE9899006AFD7A /* Mapbox.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Mapbox.bundle; path = Mapbox/Mapbox.bundle; sourceTree = SOURCE_ROOT; };
+		DDA8783A19AE98A6006AFD7A /* libMapbox.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMapbox.a; path = ../Mapbox/libMapbox.a; sourceTree = "<group>"; };
+		DDA8783E19AE98C3006AFD7A /* Mapbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mapbox.h; sourceTree = "<group>"; };
+		DDA8783F19AE98C3006AFD7A /* RMAbstractMercatorTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractMercatorTileSource.h; sourceTree = "<group>"; };
+		DDA8784019AE98C3006AFD7A /* RMAbstractWebMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAbstractWebMapSource.h; sourceTree = "<group>"; };
+		DDA8784119AE98C3006AFD7A /* RMAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAnnotation.h; sourceTree = "<group>"; };
+		DDA8784219AE98C3006AFD7A /* RMAttributionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMAttributionViewController.h; sourceTree = "<group>"; };
+		DDA8784319AE98C3006AFD7A /* RMBingSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMBingSource.h; sourceTree = "<group>"; };
+		DDA8784419AE98C3006AFD7A /* RMCacheObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCacheObject.h; sourceTree = "<group>"; };
+		DDA8784519AE98C3006AFD7A /* RMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCircle.h; sourceTree = "<group>"; };
+		DDA8784619AE98C3006AFD7A /* RMCircleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCircleAnnotation.h; sourceTree = "<group>"; };
+		DDA8784719AE98C3006AFD7A /* RMCompositeSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCompositeSource.h; sourceTree = "<group>"; };
+		DDA8784819AE98C3006AFD7A /* RMConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMConfiguration.h; sourceTree = "<group>"; };
+		DDA8784919AE98C3006AFD7A /* RMCoordinateGridSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMCoordinateGridSource.h; sourceTree = "<group>"; };
+		DDA8784A19AE98C3006AFD7A /* RMDatabaseCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDatabaseCache.h; sourceTree = "<group>"; };
+		DDA8784B19AE98C3006AFD7A /* RMDBMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMDBMapSource.h; sourceTree = "<group>"; };
+		DDA8784C19AE98C3006AFD7A /* RMFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFoundation.h; sourceTree = "<group>"; };
+		DDA8784D19AE98C3006AFD7A /* RMFractalTileProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMFractalTileProjection.h; sourceTree = "<group>"; };
+		DDA8784E19AE98C3006AFD7A /* RMGenericMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGenericMapSource.h; sourceTree = "<group>"; };
+		DDA8784F19AE98C3006AFD7A /* RMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGlobalConstants.h; sourceTree = "<group>"; };
+		DDA8785019AE98C3006AFD7A /* RMGreatCircleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGreatCircleAnnotation.h; sourceTree = "<group>"; };
+		DDA8785119AE98C3006AFD7A /* RMInteractiveSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMInteractiveSource.h; sourceTree = "<group>"; };
+		DDA8785219AE98C3006AFD7A /* RMLoadingTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMLoadingTileView.h; sourceTree = "<group>"; };
+		DDA8785319AE98C3006AFD7A /* RMMapboxSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapboxSource.h; sourceTree = "<group>"; };
+		DDA8785419AE98C3006AFD7A /* RMMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapLayer.h; sourceTree = "<group>"; };
+		DDA8785519AE98C3006AFD7A /* RMMapOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapOverlayView.h; sourceTree = "<group>"; };
+		DDA8785619AE98C3006AFD7A /* RMMapQuestOpenAerialSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapQuestOpenAerialSource.h; sourceTree = "<group>"; };
+		DDA8785719AE98C3006AFD7A /* RMMapQuestOSMSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapQuestOSMSource.h; sourceTree = "<group>"; };
+		DDA8785819AE98C3006AFD7A /* RMMapScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapScrollView.h; sourceTree = "<group>"; };
+		DDA8785919AE98C3006AFD7A /* RMMapTiledLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapTiledLayerView.h; sourceTree = "<group>"; };
+		DDA8785A19AE98C3006AFD7A /* RMMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapView.h; sourceTree = "<group>"; };
+		DDA8785B19AE98C3006AFD7A /* RMMapViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMapViewDelegate.h; sourceTree = "<group>"; };
+		DDA8785C19AE98C3006AFD7A /* RMMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMarker.h; sourceTree = "<group>"; };
+		DDA8785D19AE98C3006AFD7A /* RMMBTilesSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMBTilesSource.h; sourceTree = "<group>"; };
+		DDA8785E19AE98C3006AFD7A /* RMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMemoryCache.h; sourceTree = "<group>"; };
+		DDA8785F19AE98C3006AFD7A /* RMNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMNotifications.h; sourceTree = "<group>"; };
+		DDA8786019AE98C3006AFD7A /* RMOpenCycleMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenCycleMapSource.h; sourceTree = "<group>"; };
+		DDA8786119AE98C3006AFD7A /* RMOpenSeaMapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenSeaMapLayer.h; sourceTree = "<group>"; };
+		DDA8786219AE98C3006AFD7A /* RMOpenSeaMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenSeaMapSource.h; sourceTree = "<group>"; };
+		DDA8786319AE98C3006AFD7A /* RMOpenStreetMapSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMOpenStreetMapSource.h; sourceTree = "<group>"; };
+		DDA8786419AE98C3006AFD7A /* RMPixel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPixel.h; sourceTree = "<group>"; };
+		DDA8786519AE98C3006AFD7A /* RMPointAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPointAnnotation.h; sourceTree = "<group>"; };
+		DDA8786619AE98C3006AFD7A /* RMPolygonAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPolygonAnnotation.h; sourceTree = "<group>"; };
+		DDA8786719AE98C3006AFD7A /* RMPolylineAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPolylineAnnotation.h; sourceTree = "<group>"; };
+		DDA8786819AE98C3006AFD7A /* RMProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMProjection.h; sourceTree = "<group>"; };
+		DDA8786919AE98C3006AFD7A /* RMQuadTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMQuadTree.h; sourceTree = "<group>"; };
+		DDA8786A19AE98C3006AFD7A /* RMShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShape.h; sourceTree = "<group>"; };
+		DDA8786B19AE98C3006AFD7A /* RMShapeAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMShapeAnnotation.h; sourceTree = "<group>"; };
+		DDA8786C19AE98C3006AFD7A /* RMStaticMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMStaticMapView.h; sourceTree = "<group>"; };
+		DDA8786D19AE98C3006AFD7A /* RMTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTile.h; sourceTree = "<group>"; };
+		DDA8786E19AE98C3006AFD7A /* RMTileCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCache.h; sourceTree = "<group>"; };
+		DDA8786F19AE98C3006AFD7A /* RMTileCacheDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileCacheDownloadOperation.h; sourceTree = "<group>"; };
+		DDA8787019AE98C3006AFD7A /* RMTileImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileImage.h; sourceTree = "<group>"; };
+		DDA8787119AE98C3006AFD7A /* RMTileMillSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileMillSource.h; sourceTree = "<group>"; };
+		DDA8787219AE98C3006AFD7A /* RMTileSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSource.h; sourceTree = "<group>"; };
+		DDA8787319AE98C3006AFD7A /* RMTileSourcesContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTileSourcesContainer.h; sourceTree = "<group>"; };
+		DDA8787419AE98C3006AFD7A /* RMUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserLocation.h; sourceTree = "<group>"; };
+		DDA8787519AE98C3006AFD7A /* RMUserTrackingBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMUserTrackingBarButtonItem.h; sourceTree = "<group>"; };
+		DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OfflineLayerViewController.h; sourceTree = "<group>"; };
+		DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OfflineLayerViewController.m; sourceTree = "<group>"; };
+		DDC4BEC7152E36FF00089409 /* offline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = offline.png; sourceTree = "<group>"; };
+		DDC4BEC8152E36FF00089409 /* offline@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "offline@2x.png"; sourceTree = "<group>"; };
+		DDC4BF10152E455500089409 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DDC930041A1599D20082BDE8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DDC930051A1599D20082BDE8 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		DDEF3A291522813600DE6DB0 /* MB Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MB Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDEF3A2D1522813600DE6DB0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DDEF3A2F1522813600DE6DB0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DDEF3A311522813600DE6DB0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DDEF3A351522813600DE6DB0 /* OffLine Map Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OffLine Map Example-Info.plist"; sourceTree = "<group>"; };
+		DDEF3A371522813600DE6DB0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DDEF3A391522813600DE6DB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDEF3A3B1522813600DE6DB0 /* OffLine Map Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OffLine Map Example-Prefix.pch"; sourceTree = "<group>"; };
+		DDEF3A3C1522813600DE6DB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DDEF3A261522813600DE6DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDEF3A321522813600DE6DB0 /* CoreGraphics.framework in Frameworks */,
+				DD3A27EE1582A0AB00DADEFF /* CoreLocation.framework in Frameworks */,
+				DDEF3A301522813600DE6DB0 /* Foundation.framework in Frameworks */,
+				DDEF3A6D1522847A00DE6DB0 /* QuartzCore.framework in Frameworks */,
+				DDEF3A2E1522813600DE6DB0 /* UIKit.framework in Frameworks */,
+				DDA8783B19AE98A6006AFD7A /* libMapbox.a in Frameworks */,
+				DDC4BF12152E457A00089409 /* libsqlite3.dylib in Frameworks */,
+				DD76D72E152E47660065DBB2 /* libz.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DDA6DFC016A636BC00D373D8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				DDA6DFBE16A6364F00D373D8 /* NSData+Base64.h */,
+				DDA6DFBD16A6364F00D373D8 /* NSData+Base64.m */,
+			);
+			name = Categories;
+			path = "Mapbox Example";
+			sourceTree = "<group>";
+		};
+		DDA8783C19AE98AF006AFD7A /* Mapbox */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8783D19AE98C3006AFD7A /* Headers */,
+				DDA8783A19AE98A6006AFD7A /* libMapbox.a */,
+				DDA8783819AE9899006AFD7A /* Mapbox.bundle */,
+			);
+			name = Mapbox;
+			path = "Mapbox Example";
+			sourceTree = "<group>";
+		};
+		DDA8783D19AE98C3006AFD7A /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				DDA8783E19AE98C3006AFD7A /* Mapbox.h */,
+				DDA8783F19AE98C3006AFD7A /* RMAbstractMercatorTileSource.h */,
+				DDA8784019AE98C3006AFD7A /* RMAbstractWebMapSource.h */,
+				DDA8784119AE98C3006AFD7A /* RMAnnotation.h */,
+				DDA8784219AE98C3006AFD7A /* RMAttributionViewController.h */,
+				DDA8784319AE98C3006AFD7A /* RMBingSource.h */,
+				DDA8784419AE98C3006AFD7A /* RMCacheObject.h */,
+				DDA8784519AE98C3006AFD7A /* RMCircle.h */,
+				DDA8784619AE98C3006AFD7A /* RMCircleAnnotation.h */,
+				DDA8784719AE98C3006AFD7A /* RMCompositeSource.h */,
+				DDA8784819AE98C3006AFD7A /* RMConfiguration.h */,
+				DDA8784919AE98C3006AFD7A /* RMCoordinateGridSource.h */,
+				DDA8784A19AE98C3006AFD7A /* RMDatabaseCache.h */,
+				DDA8784B19AE98C3006AFD7A /* RMDBMapSource.h */,
+				DDA8784C19AE98C3006AFD7A /* RMFoundation.h */,
+				DDA8784D19AE98C3006AFD7A /* RMFractalTileProjection.h */,
+				DDA8784E19AE98C3006AFD7A /* RMGenericMapSource.h */,
+				DDA8784F19AE98C3006AFD7A /* RMGlobalConstants.h */,
+				DDA8785019AE98C3006AFD7A /* RMGreatCircleAnnotation.h */,
+				DDA8785119AE98C3006AFD7A /* RMInteractiveSource.h */,
+				DDA8785319AE98C3006AFD7A /* RMMapboxSource.h */,
+				DDA8785419AE98C3006AFD7A /* RMMapLayer.h */,
+				DDA8785519AE98C3006AFD7A /* RMMapOverlayView.h */,
+				DDA8785219AE98C3006AFD7A /* RMLoadingTileView.h */,
+				DDA8785619AE98C3006AFD7A /* RMMapQuestOpenAerialSource.h */,
+				DDA8785719AE98C3006AFD7A /* RMMapQuestOSMSource.h */,
+				DDA8785819AE98C3006AFD7A /* RMMapScrollView.h */,
+				DDA8785919AE98C3006AFD7A /* RMMapTiledLayerView.h */,
+				DDA8785A19AE98C3006AFD7A /* RMMapView.h */,
+				DDA8785B19AE98C3006AFD7A /* RMMapViewDelegate.h */,
+				DDA8785C19AE98C3006AFD7A /* RMMarker.h */,
+				DDA8785D19AE98C3006AFD7A /* RMMBTilesSource.h */,
+				DDA8785E19AE98C3006AFD7A /* RMMemoryCache.h */,
+				DDA8785F19AE98C3006AFD7A /* RMNotifications.h */,
+				DDA8786019AE98C3006AFD7A /* RMOpenCycleMapSource.h */,
+				DDA8786119AE98C3006AFD7A /* RMOpenSeaMapLayer.h */,
+				DDA8786219AE98C3006AFD7A /* RMOpenSeaMapSource.h */,
+				DDA8786319AE98C3006AFD7A /* RMOpenStreetMapSource.h */,
+				DDA8786419AE98C3006AFD7A /* RMPixel.h */,
+				DDA8786519AE98C3006AFD7A /* RMPointAnnotation.h */,
+				DDA8786619AE98C3006AFD7A /* RMPolygonAnnotation.h */,
+				DDA8786719AE98C3006AFD7A /* RMPolylineAnnotation.h */,
+				DDA8786819AE98C3006AFD7A /* RMProjection.h */,
+				DDA8786919AE98C3006AFD7A /* RMQuadTree.h */,
+				DDA8786A19AE98C3006AFD7A /* RMShape.h */,
+				DDA8786B19AE98C3006AFD7A /* RMShapeAnnotation.h */,
+				DDA8786C19AE98C3006AFD7A /* RMStaticMapView.h */,
+				DDA8786D19AE98C3006AFD7A /* RMTile.h */,
+				DDA8786E19AE98C3006AFD7A /* RMTileCache.h */,
+				DDA8786F19AE98C3006AFD7A /* RMTileCacheDownloadOperation.h */,
+				DDA8787019AE98C3006AFD7A /* RMTileImage.h */,
+				DDA8787119AE98C3006AFD7A /* RMTileMillSource.h */,
+				DDA8787219AE98C3006AFD7A /* RMTileSource.h */,
+				DDA8787319AE98C3006AFD7A /* RMTileSourcesContainer.h */,
+				DDA8787419AE98C3006AFD7A /* RMUserLocation.h */,
+				DDA8787519AE98C3006AFD7A /* RMUserTrackingBarButtonItem.h */,
+			);
+			name = Headers;
+			path = Mapbox/Headers;
+			sourceTree = SOURCE_ROOT;
+		};
+		DDC4BEC3152E356F00089409 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C23D8AAC1AB324C6002C8913 /* kiev_OSMBright.mbtiles */,
+				DDC4BEC7152E36FF00089409 /* offline.png */,
+				DDC4BEC8152E36FF00089409 /* offline@2x.png */,
+			);
+			name = Resources;
+			path = "Mapbox Example";
+			sourceTree = "<group>";
+		};
+		DDEF3A1E1522813600DE6DB0 = {
+			isa = PBXGroup;
+			children = (
+				DDEF3A331522813600DE6DB0 /* Mapbox Example */,
+				DDC4BEC3152E356F00089409 /* Resources */,
+				DDA6DFC016A636BC00D373D8 /* Categories */,
+				DDA8783C19AE98AF006AFD7A /* Mapbox */,
+				DDEF3A2C1522813600DE6DB0 /* Frameworks */,
+				DDEF3A2A1522813600DE6DB0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DDEF3A2A1522813600DE6DB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF3A291522813600DE6DB0 /* MB Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DDEF3A2C1522813600DE6DB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF3A311522813600DE6DB0 /* CoreGraphics.framework */,
+				DD3A27ED1582A0AB00DADEFF /* CoreLocation.framework */,
+				DDEF3A2F1522813600DE6DB0 /* Foundation.framework */,
+				DDEF3A6C1522847A00DE6DB0 /* QuartzCore.framework */,
+				DDEF3A2D1522813600DE6DB0 /* UIKit.framework */,
+				DDEF3A6E1522848500DE6DB0 /* libsqlite3.dylib */,
+				DDC4BF10152E455500089409 /* libz.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDEF3A331522813600DE6DB0 /* Mapbox Example */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF3A3C1522813600DE6DB0 /* AppDelegate.h */,
+				DDEF3A3D1522813600DE6DB0 /* AppDelegate.m */,
+				DDC4BEC4152E366800089409 /* OfflineLayerViewController.h */,
+				DDC4BEC5152E366800089409 /* OfflineLayerViewController.m */,
+				DDC930041A1599D20082BDE8 /* Images.xcassets */,
+				DDC930051A1599D20082BDE8 /* LaunchScreen.xib */,
+				DDEF3A341522813600DE6DB0 /* Supporting Files */,
+			);
+			path = "Mapbox Example";
+			sourceTree = "<group>";
+		};
+		DDEF3A341522813600DE6DB0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDEF3A351522813600DE6DB0 /* OffLine Map Example-Info.plist */,
+				DDEF3A361522813600DE6DB0 /* InfoPlist.strings */,
+				DDEF3A391522813600DE6DB0 /* main.m */,
+				DDEF3A3B1522813600DE6DB0 /* OffLine Map Example-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DDEF3A281522813600DE6DB0 /* OffLine Map Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDEF3A471522813600DE6DB0 /* Build configuration list for PBXNativeTarget "OffLine Map Example" */;
+			buildPhases = (
+				DDEF3A251522813600DE6DB0 /* Sources */,
+				DDEF3A261522813600DE6DB0 /* Frameworks */,
+				DDEF3A271522813600DE6DB0 /* Resources */,
+				DDC930081A159A220082BDE8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OffLine Map Example";
+			productName = "Mapbox Example";
+			productReference = DDEF3A291522813600DE6DB0 /* MB Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DDEF3A201522813600DE6DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Mapbox / Development Seed";
+			};
+			buildConfigurationList = DDEF3A231522813600DE6DB0 /* Build configuration list for PBXProject "OffLine Map Example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DDEF3A1E1522813600DE6DB0;
+			productRefGroup = DDEF3A2A1522813600DE6DB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DDEF3A281522813600DE6DB0 /* OffLine Map Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DDEF3A271522813600DE6DB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23D8AAD1AB324F4002C8913 /* kiev_OSMBright.mbtiles in Resources */,
+				DDA8783919AE9899006AFD7A /* Mapbox.bundle in Resources */,
+				DDC930061A1599D20082BDE8 /* Images.xcassets in Resources */,
+				DDEF3A381522813600DE6DB0 /* InfoPlist.strings in Resources */,
+				DDC4BEC9152E36FF00089409 /* offline.png in Resources */,
+				DDC4BECA152E36FF00089409 /* offline@2x.png in Resources */,
+				DDC930071A1599D20082BDE8 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DDC930081A159A220082BDE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=$HOME/bin:/usr/local/bin:/usr/bin\n\n#\n# don't burn during Debug builds\n#\nif [[ ${CONFIGURATION} != \"Release\" ]]; then\necho \"Skipping icon burning due to ${CONFIGURATION} configuration\"\nexit 0\nfi\n\necho \"Burning app icons...\"\n\n#\n# retrieve git info\n#\ncommit=`git rev-parse --short HEAD`\nbranch=`git rev-parse --abbrev-ref HEAD`\nrepo=`git remote show origin | grep 'Fetch URL' | sed -e 's/.*github\\.com:mapbox\\///' -e 's/\\.git$//'`\n\n#\n# work directly in app bundle\n#\nbundle_path=\"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\necho \"working in ${bundle_path}\"\ncd \"${bundle_path}\"\n\nfor file in `find . -type f -name AppIcon\\*.png`\ndo\niconoblast \"$file\" $commit $branch $repo\ndone\ncd \"$OLDPWD\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DDEF3A251522813600DE6DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDEF3A3A1522813600DE6DB0 /* main.m in Sources */,
+				DDEF3A3E1522813600DE6DB0 /* AppDelegate.m in Sources */,
+				DDC4BEC6152E366800089409 /* OfflineLayerViewController.m in Sources */,
+				DDA6DFBF16A6364F00D373D8 /* NSData+Base64.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DDEF3A361522813600DE6DB0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DDEF3A371522813600DE6DB0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DDB867EE1551E029000E06D3 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Ad Hoc";
+		};
+		DDB867EF1551E029000E06D3 /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mapbox Example/OffLine Map Example-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"";
+				INFOPLIST_FILE = "Mapbox Example/OffLine Map Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Mapbox",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "MB Example";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = "Ad Hoc";
+		};
+		DDEF3A451522813600DE6DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DDEF3A461522813600DE6DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DDEF3A481522813600DE6DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mapbox Example/OffLine Map Example-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"";
+				INFOPLIST_FILE = "Mapbox Example/OffLine Map Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Mapbox",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "MB Example";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DDEF3A491522813600DE6DB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mapbox Example/OffLine Map Example-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/Mapbox.framework/Headers\"";
+				INFOPLIST_FILE = "Mapbox Example/OffLine Map Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Mapbox",
+				);
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "MB Example";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DDEF3A231522813600DE6DB0 /* Build configuration list for PBXProject "OffLine Map Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEF3A451522813600DE6DB0 /* Debug */,
+				DDEF3A461522813600DE6DB0 /* Release */,
+				DDB867EE1551E029000E06D3 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDEF3A471522813600DE6DB0 /* Build configuration list for PBXNativeTarget "OffLine Map Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDEF3A481522813600DE6DB0 /* Debug */,
+				DDEF3A491522813600DE6DB0 /* Release */,
+				DDB867EF1551E029000E06D3 /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DDEF3A201522813600DE6DB0 /* Project object */;
+}
